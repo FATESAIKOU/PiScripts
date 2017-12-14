@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+"""
+This is a program for simple led control on RasberryPi(R)
+
+@author: FATESAIKOU
+@argv[1:]: ALL Pins for using
+"""
+
 import RPi.GPIO as GPIO
 import sys
 import random
@@ -22,7 +29,6 @@ def setoffPin(pins):
 
 def main():
     PINS = [int(s) for s in sys.argv[1:]]
-
 
     print("Init Env")
     initEnv()
