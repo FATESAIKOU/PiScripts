@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-This is a sample program for buzzer on RasberryPi(R).
+This is a sample program for buzzer on RaspberryPi(R).
 
 @author: FATESAIKOU
 @argv[1]: buzzer input pin

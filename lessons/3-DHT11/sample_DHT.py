@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-This program is for RasberryPi(R) to get DHT11's data with python3.
+This program is for RaspberryPi(R) to get DHT11's data with python3.
 Notice that you have to install Adafruit_DHT module first with bellow:
 
     $ git clone https://github.com/adafruit/Adafruit_Python_DHT.git
