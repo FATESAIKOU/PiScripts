@@ -44,7 +44,7 @@ def main():
     signal.signal(signal.SIGINT, end_handler)
 
     while shining:
-        now_pins = random.sample(PINS, random.randint(1, 3))
+        now_pins = random.sample(PINS, random.randint(1, len(PINS)))
         print("Use Pin:", now_pins)
     
         print("Setup Pins")
