@@ -41,6 +41,11 @@ def setPin(pwms, duties):
         pwms[i].ChangeDutyCycle(duties[i])
 
 
+def endShining(pwms):
+    for pwm in pwms:
+        pwm.stop()
+
+
 def main():
     PINS = [int(s) for s in sys.argv[1:]]
 
@@ -60,7 +65,7 @@ def main():
 
     
     print("Setoff Pins")
-    setPin(pwms, [0] * len(pwms))
+    endShining(pwms)
     GPIO.cleanup()
 
 
