@@ -40,6 +40,8 @@ def getSignal(pin):
                 return signals[1:]
     
         signals.append(duringUp)
+
+    return signals
     
 
 def main():

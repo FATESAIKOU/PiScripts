@@ -41,6 +41,8 @@ def getSignal(pin):
     
         signals.append(duringUp)
 
+    return signals
+
 
 def compairSignal(s1, s2, rang):
     min_len = min(len(s1), len(s2))
