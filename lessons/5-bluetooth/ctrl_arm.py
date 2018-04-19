@@ -13,15 +13,18 @@ About limits:
     M6(gripper): [10, 73]
 
 @author: FATESAIKOU
+@argv[1]: robotic_addr # 98:D3:32:30:57:79
+@argv[2]: home_action  # 0000000100100100095050
 """
 
 import time
 import math
+import sys
 
 from bluetooth import *
 
-ROBOTIC_ADDR = "98:D3:32:30:57:79"
-HOME = "0000000100100100095050"
+ROBOTIC_ADDR = sys.argv[1]
+HOME = sys.argv[2]
 
 def genAction(action):
     print(action)
